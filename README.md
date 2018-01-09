@@ -19,13 +19,20 @@ cd node-contact-api-master
 npm install
 ```
 
+### Configuration
+
+Edit dbconnection.js and provide your MySQL connection data
+
+
 Run development server:
 
 ```
 npm start
 ```
 
-Visit your local server on the provided port (ex: http://127.0.0.1:3000)
+Visit your local server on the provided port (ex: 3000):
+[Contacts](http://127.0.0.1:3000/contacts)
+[Groups](http://127.0.0.1:3000/groups)
 
 ## Client
 
