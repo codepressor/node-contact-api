@@ -1,6 +1,6 @@
-# Node.js RESTful Contact API
+# Node Contact API
 
-Simple RESTful Contact API made with Node.js
+Simple RESTful Contact API made with Node.js, Express and MySQL
 
 ## Getting Started
 
@@ -27,9 +27,9 @@ npm start
 
 Visit your local server on the provided port (ex: http://127.0.0.1:3000)
 
-## Deployment
+## Client
 
-TO DO
+Please check my React Client developed to communicate with this API: [React Rest Contact List](https://github.com/codepressor/react-rest-contact-list)
 
 ## Built With
 

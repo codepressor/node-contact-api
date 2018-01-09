@@ -1,3 +1,5 @@
+// Groups db model
+
 var db = require('../dbconnection');
  
 var Groups = {

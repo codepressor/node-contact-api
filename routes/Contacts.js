@@ -1,3 +1,5 @@
+// Contacts API routes
+
 var express = require('express');
 var router = express.Router();
 var Contacts = require('../models/Contacts');
@@ -34,7 +36,7 @@ router.post('/', function(req, res, next) {
         if(err) {
             res.json(err);
         } else {
-            res.json(req.body); //or return count for 1 &amp;amp;amp; 0
+            res.json(req.body);
         }
     });
 
@@ -54,7 +56,7 @@ router.delete('/:id', function(req, res, next) {
 
 router.put('/:id', function(req, res, next) {
  
-    Contacts.updateContact(req.params.id, req.body, function(err, rows) {    
+    Contacts.updateContact(req.body, function(err, rows) {    
         if(err) {
             res.json(err);
         } else {

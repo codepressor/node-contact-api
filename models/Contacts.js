@@ -1,3 +1,5 @@
+// Contacts db model
+
 var db = require('../dbconnection');
  
 var Contacts = {
@@ -10,16 +12,16 @@ var Contacts = {
         return db.query("select * from contacts where id=?", [id], callback);
     },
 
-    addContact:function(contact, callback){
-        return db.query("insert into contacts (name, ngroup, mobile) values (?, ?, ?)", [contact.name, contact.group, contact.mobile], callback);
+    addContact:function(data, callback){
+        return db.query("insert into contacts (name, ngroup, mobile) values (?, ?, ?)", [data.contact.name, data.contact.ngroup, data.contact.mobile], callback);
     },
 
     deleteContact:function(id, callback){
         return db.query("delete from contacts where id=?", [id], callback);
     },
 
-    updateContact:function(id, contact, callback){
-        return db.query("update contacts set name=?, ngroup=?, mobile=? where id=?", [contact.name, contact.group, contact.mobile, contact.id], callback);
+    updateContact:function(data, callback){
+        return db.query("update contacts set name=?, ngroup=?, mobile=? where id=?", [data.contact.name, data.contact.ngroup, data.contact.mobile, data.contact.id], callback);
     }
  
 };

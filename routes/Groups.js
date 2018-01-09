@@ -1,3 +1,5 @@
+// Groups API routes
+
 var express = require('express');
 var router = express.Router();
 var Groups = require('../models/Groups');
@@ -20,7 +22,7 @@ router.post('/', function(req, res, next) {
         if(err) {
             res.json(err);
         } else {
-            res.json(req.body); //or return count for 1 &amp;amp;amp; 0
+            res.json(req.body);
         }
     });
 
